@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/slideshow.css">
+    <script src="./resources/js/langDropdown.js"></script>
+    <title>Gringotts | Financial Services</title>
+    <link 
+        rel="icon" 
+        type="image/x-icon" 
+        href="/resources/images/favicon_light.ico"
+        media="(prefers-color-scheme: light)"
+    />
+    <link 
+        rel="icon" 
+        type="image/x-icon" 
+        href="/resources/images/favicon_dark.ico"
+        media="(prefers-color-scheme: dark)"
+    />
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav-logo">
+                <img src="./resources/images/gringotts_logo.png" alt="Tradeledge logo">
+            </div>
+            <div id="nav-links">
+                <!-- navli containers are created so that when links are boldened in the hover state, the rest of the links don't move.-->
+                <!-- <div class="navli" id="platform"><a href="#our-firm">Our Firm</a></div> -->
+                <div class="navli" id="trade"><a href="#for-trade">Investment</a></div>
+                <div class="navli"><a href="#for-msmes">Consulting</a></div>
+                <div class="navli"><a href="#fully-digital">Research</a></div>
+                <div class="navli" id="contactUs"><a href="#our-team">Our Team</a></div>
+                <div><img id="lang-flag" src="./resources/images/EN.png" alt="English"></div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">EN</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <div class="lang-option">
+                        <img class="lang-icon" src="./resources/images/HE.png" alt="Hebrew">
+                        <a href="./he.html">HE</a>
+                      </div>
+                    </div>
+                </div>
+            </div>            
+        </nav>
+        <div class="container">
+            <div class="tagline">
+                <h1>Financial solutions in an evolving world</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="our-firm">
+            <h3>Gringotts is a premier destination for exceptional investment opportunities and financial expertise. At Gringotts, we pride ourselves on being a trusted and reliable partner in navigating the complex world of investments.</h3>
+        </div>
+        <!-- Slideshow container -->
+        
+        <div class="container" id="for-trade">
+            <div class="picture" id="stacked-containers"> <!-- an image paired with a description of benefits. -->
+                <img class="benefit-image" src="./resources/images/TLV.jpg" alt="Tel Aviv">
+            </div>
+            <div class="benefits">  <!-- 3 benefits related with this topic. -->
+                <h2>Global approach to investing</h2>
+                <div class="benefit-action">
+                    <h3>Expanding your investment horizons</h3>
+                    <p>We help you look beyond local markets, identifying global opportunities that align with your financial goals. 
+                        Diversification across regions reduces risk and opens new avenues for growth in dynamic, international sectors.</p>
+                </div>
+                <div class="benefit-action">
+                    <h3>Seizing global market opportunities</h3>
+                    <p>With a deep understanding of global trends, we position your portfolio to capitalize on emerging markets and industries. 
+                        Our insights help you navigate international complexities while seeking out the best growth opportunities worldwide.</p>
+                </div>
+                <div class="benefit-action">
+                    <h3>Navigating international investment landscapes</h3>
+                    <p>Our team brings extensive knowledge of global markets to ensure your portfolio adapts to economic shifts. 
+                        By incorporating diverse assets from around the world, we strive to enhance your financial resilience and long-term success.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="for-msmes">
+            <div class="benefits">  <!-- 3 benefits related with this topic. -->
+                <h2>Tailored and personal advise</h2>
+                <div class="benefit-action">
+                    <h3>Your goals, our customized strategies</h3>
+                    <p>Every financial journey is unique. We take the time to understand your firm's goals and craft tailored strategies 
+                        designed to meeting specific needs, ensuring that every decision aligns with your vision for the future.</p>
+                </div>
+                <div class="benefit-action">
+                    <h3>A personalized approach to wealth</h3>
+                    <p>We believe in providing advice that reflects specific circumstances. Our team works closely with you to deliver 
+                        solutions that evolve with your firm’s growth, helping you make informed decisions at every stage.</p>
+                </div>
+                <div class="benefit-action">
+                    <h3>Financial guidance centered on you</h3>
+                    <p>Our advice is built around our clients. We take a personalized approach, adapting to your firm’s financial priorities and goals, 
+                        ensuring that your wealth strategy is aligned with your long-term strategy and vision.</p>
+                </div>
+            </div>
+            <div class="picture" id="coworking"> <!-- an image paired with a description of benefits. -->
+                <img class="benefit-image" src="./resources/images/meeting.jpg" alt="Business meeting">
+            </div>
+        </div>
+        <div class="container" id="fully-digital">
+            <div class="picture" id="laptop"> <!-- an image paired with a description of benefits. -->
+                <img class="benefit-image" src="./resources/images/beyond_numbers.jpeg" alt="Financial discussion">
+            </div>
+            <div class="benefits">  <!-- 3 benefits related with this topic. -->
+                <h2>Rigorous financial research</h2>
+                <div class="benefit-action">
+                    <h3>In-depth analysis for informed decisions</h3>
+                    <p>Our investment strategies are grounded in thorough research and data-driven insights. 
+                        We provide you with well-researched recommendations, enabling you to make 
+                        confident financial decisions based on reliable market trends and forecasts.</p>
+                </div>
+                <div class="benefit-action">
+                    <h3>Data-driven strategies for sustainable growth</h3>
+                    <p>We combine rigorous financial research with a deep understanding of market dynamics. 
+                        Our comprehensive approach ensures that your portfolio is backed by solid analysis, aiming for sustainable growth in an ever-changing world.</p>
+                </div>
+                <div class="benefit-action">
+                    <h3>Continuous monitoring of financial trends</h3>
+                    <p>We leave no stone unturned. By continuously analyzing financial markets, we identify trends and risks to optimize your investment strategy. 
+                        This commitment to research helps protects your portfolio, positioning it for long-term success.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="our-team">
+            <div id="team-member">
+                <div class="team-img" id="itai">
+                    <img src="./resources/images/Itai.png">
+                </div>
+                <div id="bio">
+                    <h3>Itai Cohen, MBA, CPA</h3>
+                    <h4>Managing Director</h4>
+                    <p>Itai is an experienced Financial Director and Serial Entrepreneur with a proven track record of success in high-tech, 
+                        fintech, healthcare, and energy industries. With extensive international experience, he has led ventures from concept 
+                        stage to operational success, navigating capital raising, development, and complex transactions such as mergers, 
+                        acquisitions, and IPOs worldwide.</p>
+                </div>
+            </div>
+            <div id="team-member">
+                <div class="team-img" id="ricardo">
+                    <img src="./resources/images/Ricardo.png">
+                </div>
+                <div id="bio">
+                    <h3>Ricardo Henriquez, PhD, CPA</h3>
+                    <h4>Senior Advisor</h4>
+                    <p>Ricardo is a certified Financial Advisor, with international experience in 4 continents. His expertise spans a wide range of 
+                        financial sectors, including private equity, crypto-investment, startup fundraising, trade finance and project finance. 
+                        He has provided financial advise to firms from diverging industries, such as health-tech, international trade, fintech and IT-development.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="name-address">
+            <address><span id="legal-name">Gringotts Finance Ltd</span><br>
+                Dvir,
+                Israel<br><br>
+                Tel. +972 50-676-6677<br>
+                Email: info@gringottsfinance.com
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
