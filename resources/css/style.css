@@ -15,7 +15,7 @@ body {
 
 header {
     width: 100%;
-    height: 47rem;
+    height: 47.5rem;
     background-image: url("../images/glass_background.jpg");
     background-size: cover;
 }
@@ -111,7 +111,9 @@ a:visited {
     background: none;
     height: 1.75rem;
     width: 2.75rem;
+    padding: 0.3rem;
     border-radius: 0;
+    border-style: none;
     cursor: pointer;
     color:#05164D;
     font-size: 1.15rem;
@@ -184,20 +186,20 @@ a:visited {
     font-weight: 700;
     font-size: 3.5rem;
     color: black;
-    margin-left: 15%;
+    margin-left: 12.5%;
     padding-top: 5%;
-    width: 55%;
+    width: 40%;
 }
 
 .container {
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 43.5rem;
 }
 
-#our-firm {
+#our-firm, #our-team {
     background-color: #F3F4F8;
-    height: 500px;
+    height: 35rem;
     display: flex;
 }
 
@@ -282,11 +284,6 @@ a:visited {
     color: dimgrey;
 }
 
-#our-team {
-    background-color: #F3F4F8;
-    height: 600px;
-}
-
 #team-member {
     display: flex;
     align-items: center;
@@ -298,8 +295,8 @@ a:visited {
     align-items: center;
     justify-content: center;
     background-color: #60B5F7;
-    width: 275px;
-    height: 320px;
+    width: 17.5rem;   /* 275px */
+    height: 20.25rem;  /* 320px */
     border-radius: 1%;
 }
 
@@ -310,7 +307,7 @@ a:visited {
 #bio {
     margin-left: 3%;
     height: 55%;
-    width: 310px;
+    width: 20rem;
 }
 
 #bio h3 {
@@ -319,143 +316,11 @@ a:visited {
 }
 
 #our-team img {
-    height: 300px;
-}
-
-#description {
-    width: 50%;
-}
-
-#about-us p {
-    width: 75%;
-    font-weight: 400;
-    color: black;
-    margin: auto;
-    font-size: 1.10rem;
-}
-
-#contact-form {
-    width: 50%;
-    height: 80%;
-}
-
-#logos {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 7%;
-    display: flex;
-}
-
-.cont-logo {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
-.partner-logo {
-    object-fit: cover;
-    margin: auto;
-    width: 65%;
-}
-
-form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input {
-    width: 500px;
-    max-width: 500px;
-    height: 50px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #d9d9d9;
-    border-width: thin;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    color: black;
-    box-sizing: border-box;
-    padding: 15px;
-}
-
-form input:hover {
-    border-color: black;
-}
-
-form input:focus {
-    border-style: none;
-    outline-style: solid;
-    outline-width: medium;
-    outline-color: #00D0D7;
-}
-
-form textarea {
-    width: 500px;
-    max-width: 500px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border-style: solid;
-    border-color: #d9d9d9;
-    border-width: thin;
-    font-size: 1rem;
-    font-family: "Work Sans";
-    color: black;
-    box-sizing: border-box;
-    padding: 15px;
-}
-
-form textarea:hover {
-    border-color: black;
-}
-
-form textarea:focus {
-    border-style: solid;
-    border-color: #fff;
-    outline-style: solid;
-    outline-width: medium;
-    outline-color: #00D0D7;
-}
-
-button {
-    width: 150px;
-    height: 35px;
-    border-radius: 25px;
-    padding: 5px;
-    font-weight: 600;
-    font-size: 1.15rem;
-    background-color: rgba(0, 208, 215, 0.4);
-    border-style: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgba(0, 208, 215, 0.7);
-}
-
-button:active {
-    background-color: rgba(0, 208, 215);
-}
-
-#success-message {
-    text-align: center;
-}
-
-#success-message p {
-    width: 55%;
-    color: black;
-    margin: auto;
-    font-size: 1.15rem;
-}
-
-#success-message button {
-    margin-top: 5%;
-    width: 120px;
+    height: 19rem;
 }
 
 footer {
-    height: 150px;
+    height: 10rem;
     display: flex;
     justify-content: left;
     background-color: #05164D;
@@ -487,41 +352,10 @@ address {
     font-weight:300;
     font-style: normal;
     color: #fff;
-}  
+}
+
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-  /* Legal Docs */
-  .legal-doc {
-    background-color:#F3F4F8;
-  }
-
-  .legal-doc h2 {
-    color: #05164D;
-    font-weight: 500;
-    padding-left: 15%;
-    margin-top: 5%;
-  }
-
-  .legal-doc p {
-    color: black;
-    font-size: 0.8rem;
-  }
-
-  .imp-text {
-    display: flex;
-    padding-left: 15%;
-  }
-
-  .imp-text-col {
-    width: 50%;
-  }
-
-  #datenschutz {
-    display: block;
-  }
-
-  .highlight-legal-doc {
-    font-weight: 500;
-  }
+  .show {
+    display:block;
+}
 
