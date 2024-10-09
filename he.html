@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/css/style.css">
-    <link rel="stylesheet" href="./resources/css/slideshow.css">
     <script src="./resources/js/langDropdown.js"></script>
     <title>Gringotts | Financial Services</title>
     <link 
@@ -25,7 +24,7 @@
     <header>
         <nav>
             <div id="nav-logo">
-                <img src="./resources/images/gringotts_logo.png" alt="Tradeledge logo">
+                <img src="./resources/images/gringotts_logo.png" alt="Gringotts logo">
             </div>
             <div id="nav-links">
                 <!-- navli containers are created so that when links are boldened in the hover state, the rest of the links don't move.-->
@@ -34,7 +33,7 @@
                 <div class="navli"><a href="#for-msmes">ייעוץ</a></div>
                 <div class="navli"><a href="#fully-digital">מֶחקָר</a></div>
                 <div class="navli" id="contactUs"><a href="#our-team">הצוות שלנו</a></div>
-                <div><img id="lang-flag" src="./resources/images/HE.png" alt=""></div>
+                <div><img class="lang-flag" src="./resources/images/HE.png" alt=""></div>
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">HE</button>
                     <div id="myDropdown" class="dropdown-content">
@@ -46,20 +45,16 @@
                 </div>
             </div>            
         </nav>
-        <div class="container">
-            <div class="tagline">
-                <h1>פתרונות פיננסיים בעולם מתפתח</h1>
-            </div>
+        <div class="tagline">
+            <h1>פתרונות פיננסיים בעולם מתפתח</h1>
         </div>
     </header>
     <main>
         <div id="our-firm">
             <h3>גרינגוטס היא יעד מוביל להזדמנויות השקעה יוצאות דופן ומומחיות פיננסית. ב-Gringotts, אנו גאים בהיותנו שותף מהימן ואמין בניווט בעולם ההשקעות המורכב.</h3>
         </div>
-        <!-- Slideshow container -->
-        
-        <div class="container" id="for-trade">
-            <div class="picture" id="stacked-containers"> <!-- an image paired with a description of benefits. -->
+        <div class="container" id="investment">
+            <div class="picture" id="tel_aviv"> <!-- an image paired with a description of benefits. -->
                 <img class="benefit-image" src="./resources/images/TLV.jpg" alt="Tel Aviv">
             </div>
             <div class="benefits">  <!-- 3 benefits related with this topic. -->
@@ -78,7 +73,10 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="for-msmes">
+        <div class="container" id="consulting">
+            <div class="picture" id="meeting"> <!-- an image paired with a description of benefits. -->
+                <img class="benefit-image" src="./resources/images/meeting.jpg" alt="Business meeting">
+            </div>
             <div class="benefits">  <!-- 3 benefits related with this topic. -->
                 <h2>ייעוץ מותאם ואישי</h2>
                 <div class="benefit-action">
@@ -94,12 +92,9 @@
                     <p>הייעוץ שלנו בנוי סביב הלקוחות שלנו. אנו נוקטים בגישה מותאמת אישית, מתאימים את העדיפויות והיעדים הפיננסיים של החברה שלך, ומבטיחים שאסטרטגיית העושר שלך תואמת את האסטרטגיה והחזון לטווח ארוך שלך.</p>
                 </div>
             </div>
-            <div class="picture" id="coworking"> <!-- an image paired with a description of benefits. -->
-                <img class="benefit-image" src="./resources/images/meeting.jpg" alt="Business meeting">
-            </div>
         </div>
-        <div class="container" id="fully-digital">
-            <div class="picture" id="laptop"> <!-- an image paired with a description of benefits. -->
+        <div class="container" id="research">
+            <div class="picture" id="stats"> <!-- an image paired with a description of benefits. -->
                 <img class="benefit-image" src="./resources/images/beyond_numbers.jpeg" alt="Financial discussion">
             </div>
             <div class="benefits">  <!-- 3 benefits related with this topic. -->
@@ -119,9 +114,12 @@
             </div>
         </div>
         <div class="container" id="our-team">
+            <h2 id="our_team_title">הצוות שלנו</h2>
             <div id="team-member">
-                <div class="team-img" id="itai">
-                    <img src="./resources/images/Itai.png">
+                <div class="frame" id="itai">
+                    <div class="team-img">
+                        <img src="./resources/images/Itai.png">
+                    </div>
                 </div>
                 <div id="bio">
                     <h3>Itai Cohen, MBA, CPA</h3>
@@ -130,8 +128,10 @@
                 </div>
             </div>
             <div id="team-member">
-                <div class="team-img" id="ricardo">
-                    <img src="./resources/images/Ricardo.png">
+                <div class="frame">
+                    <div class="team-img" id="ricardo">
+                        <img src="./resources/images/Ricardo.png">
+                    </div>
                 </div>
                 <div id="bio">
                     <h3>Ricardo Henriquez, PhD, CPA</h3>

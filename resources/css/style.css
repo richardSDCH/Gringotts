@@ -4,7 +4,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: 'Inter', 'Work Sans', sans-serif;
@@ -15,14 +15,15 @@ body {
 
 header {
     width: 100%;
-    height: 750px;
+    height: 47.5rem;
     background-image: url("../images/glass_background.jpg");
     background-size: cover;
 }
 
 nav {
-    height: 65px;
+    height: 5rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: whitesmoke;
 }
@@ -66,7 +67,6 @@ a:visited {
 .navli {
     width:fit-content;
     min-height: fit-content;
-    margin-top: 25px;
     display: flex;
     justify-content: center;
     margin-right: 3%;
@@ -91,37 +91,115 @@ a:visited {
 #nav-logo img {
     max-width: 70%;
     max-height: 70%;
-    padding-left: 8%;
-    padding-top: 5%;
+    padding-left: 5%;
 }
 
 #nav-links {
     display: flex;
     justify-content: end;
+    align-items: center;
     width: 60%;
     height: fit-content;
     margin-right: 2%;
 }
+
+/* Language Dropdown */
+
+/* Dropdown Button */
+
+.dropbtn {
+    background: none;
+    height: 1.75rem;
+    width: 2.75rem;
+    padding: 0.3rem;
+    border-radius: 0;
+    border-style: none;
+    cursor: pointer;
+    color:#05164D;
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+
+  .lang-flag {
+    padding-top: 0.35rem;
+  } 
+
+  .lang-icon, .lang-flag {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 0%;
+    margin-right: 2%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 0.2rem;
+    background-color: #F3F4F8;
+    min-width: 4.15rem;
+    box-shadow: 0rem 0.8px 1.6rem 0rem rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content .lang-option {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .dropdown-content .lang-option {
+    /* margin-left: 0.5rem; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .dropdown-content a {
+    color:#05164D;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content .lang-option:hover {background-color: #d9d9d9;}
+
+/* End of Nav */
 
 .tagline h1 {
     text-align: left;
     font-weight: 700;
     font-size: 3.5rem;
     color: black;
-    margin-left: 15%;
+    margin-left: 12.5%;
     padding-top: 5%;
-    width: 55%;
+    width: 40%;
 }
 
 .container {
     display: flex;
     width: 100%;
-    height: 700px;
+    height: 43.5rem;
 }
 
-#our-firm {
+#our-firm, #our-team {
     background-color: #F3F4F8;
-    height: 500px;
+    height: 35rem;
     display: flex;
 }
 
@@ -133,41 +211,6 @@ a:visited {
     text-align: center;
     width: 75%;
     margin: auto;
-}
-
-#functionalities {
-    justify-content: space-around;
-    background-color: #F3F4F8;
-    height: auto;
-    padding-bottom: 2%;
-}
-
-.functionality {
-    width: 28%;
-    padding-bottom: 3%;
-}
-
-.functionality h3 {
-    width: 90%;
-    text-align: center;
-    margin: auto;
-}
-
-.functionality p {
-    margin-top: 5%;
-    margin-left: 4%;
-}
-
-#networking {
-    padding-left: 3%;
-}
-
-#tracking {
-    padding-right: 3%;
-}
-
-.desktop {
-    max-width: 100%;
 }
 
 .picture {
@@ -206,9 +249,16 @@ a:visited {
     color: dimgrey;
 }
 
-#our-team {
-    background-color: #F3F4F8;
-    height: 600px;
+#advise {
+    order: 1;
+}
+
+#meeting {
+    order: 2;
+}
+
+#our_team_title {
+    display: none;
 }
 
 #team-member {
@@ -217,24 +267,28 @@ a:visited {
     width: 50%;
 }
 
+.frame {
+    margin-left: 8%;
+}
+
+#itai {
+    margin-left: 15%;
+}
+
 .team-img {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #60B5F7;
-    width: 275px;
-    height: 320px;
+    width: 17.5rem;   /* 275px */
+    height: 20.25rem;  /* 320px */
     border-radius: 1%;
-}
-
-#itai {
-    margin-left: 7%;
 }
 
 #bio {
     margin-left: 3%;
     height: 55%;
-    width: 310px;
+    width: 20rem;
 }
 
 #bio h3 {
@@ -243,143 +297,11 @@ a:visited {
 }
 
 #our-team img {
-    height: 300px;
-}
-
-#description {
-    width: 50%;
-}
-
-#about-us p {
-    width: 75%;
-    font-weight: 400;
-    color: black;
-    margin: auto;
-    font-size: 1.10rem;
-}
-
-#contact-form {
-    width: 50%;
-    height: 80%;
-}
-
-#logos {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 7%;
-    display: flex;
-}
-
-.cont-logo {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-}
-
-.partner-logo {
-    object-fit: cover;
-    margin: auto;
-    width: 65%;
-}
-
-form {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input {
-    width: 500px;
-    max-width: 500px;
-    height: 50px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #d9d9d9;
-    border-width: thin;
-    margin-bottom: 20px;
-    font-size: 1rem;
-    color: black;
-    box-sizing: border-box;
-    padding: 15px;
-}
-
-form input:hover {
-    border-color: black;
-}
-
-form input:focus {
-    border-style: none;
-    outline-style: solid;
-    outline-width: medium;
-    outline-color: #00D0D7;
-}
-
-form textarea {
-    width: 500px;
-    max-width: 500px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border-style: solid;
-    border-color: #d9d9d9;
-    border-width: thin;
-    font-size: 1rem;
-    font-family: "Work Sans";
-    color: black;
-    box-sizing: border-box;
-    padding: 15px;
-}
-
-form textarea:hover {
-    border-color: black;
-}
-
-form textarea:focus {
-    border-style: solid;
-    border-color: #fff;
-    outline-style: solid;
-    outline-width: medium;
-    outline-color: #00D0D7;
-}
-
-button {
-    width: 150px;
-    height: 35px;
-    border-radius: 25px;
-    padding: 5px;
-    font-weight: 600;
-    font-size: 1.15rem;
-    background-color: rgba(0, 208, 215, 0.4);
-    border-style: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgba(0, 208, 215, 0.7);
-}
-
-button:active {
-    background-color: rgba(0, 208, 215);
-}
-
-#success-message {
-    text-align: center;
-}
-
-#success-message p {
-    width: 55%;
-    color: black;
-    margin: auto;
-    font-size: 1.15rem;
-}
-
-#success-message button {
-    margin-top: 5%;
-    width: 120px;
+    height: 19rem;
 }
 
 footer {
-    height: 150px;
+    height: 10rem;
     display: flex;
     justify-content: left;
     background-color: #05164D;
@@ -396,11 +318,6 @@ footer h4 {
     margin-top: 2%;
 }
 
-.footer-link {
-    width: 15%;
-    margin-top: 2%;
-}
-
 #legal-name {
     font-weight: 500;
     line-height: 1.5;
@@ -413,120 +330,197 @@ address {
     color: #fff;
 }
 
-/* Language Dropdown */
-
-/* Dropdown Button */
-
-.dropbtn {
-    background: none;
-    height: 30px;
-    width: 48px;
-    border-radius: 0;
-    cursor: pointer;
-    color:#05164D;
-    font-size: 1.15rem;
-    font-weight: 500;
-  }
-
-  #lang-flag {
-    width: 20px;
-    height: 20px;
-    margin-top: 26px;
-    margin-left: 10px;
-    margin-right: 0%;
-  }
-
-  .lang-icon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover, .dropbtn:focus {
-    background: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-top: 21px;
-    margin-left: 0%;
-    margin-right: 10px;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 35px;
-    right: 5px;
-    background-color: #F3F4F8;
-    min-width: 68px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content .lang-option {
-    display: flex;
-    height: auto;
-  }
-
-  .dropdown-content .lang-option .lang-icon {
-    margin-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
-  .dropdown-content a {
-    color:#05164D;
-    font-size: 1.15rem;
-    font-weight: 500;
-    margin-left: 10px;
-    text-decoration: none;
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content .lang-option:hover {background-color: #d9d9d9;}
-  
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
+  .show {
+    display:block;
+}
 
-  /* Legal Docs */
-  .legal-doc {
-    background-color:#F3F4F8;
-  }
 
-  .legal-doc h2 {
-    color: #05164D;
-    font-weight: 500;
-    padding-left: 15%;
-    margin-top: 5%;
-  }
+@media (max-width: 767px) {
 
-  .legal-doc p {
-    color: black;
-    font-size: 0.8rem;
-  }
+    header {
+        height: 25rem;
+        background-image: url("../images/glass_background.jpg");
+        background-size: 325%;
+    }
 
-  .imp-text {
-    display: flex;
-    padding-left: 15%;
-  }
+    .navli {
+        display: none;
+    }
 
-  .imp-text-col {
-    width: 50%;
-  }
+    #nav-logo {
+        width: 50%;
+    }
+    
+    #nav-logo img {
+        max-width: 90%;
+        max-height: 90%;
+        padding-left: 5%;
+    }
 
-  #datenschutz {
-    display: block;
-  }
+    .container {
+        display: block; /* Ensure the container doesn’t force inline layout */
+        width: 100%;
+        height: 79rem;
+    }
 
-  .highlight-legal-doc {
-    font-weight: 500;
-  }
+    .tagline h1 {
+        text-align: left;
+        font-weight: 700;
+        font-size: 2rem;
+        color: black;
+        margin-left: 22.5%;
+        padding-top: 17.5%;
+        width: 60%;
+    }
+
+    #our-firm {
+        height: 20rem;
+    } 
+
+    #our-firm h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+        text-align: center;
+        width: 65%;
+        margin: auto;
+    }
+
+    h2 {
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%;
+        padding-top: 2.75rem;
+        
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        text-align: center;
+        width: 85%;
+        margin: auto;
+    }
+    
+    h4 {
+        /* font-weight: 400;
+        font-size: 1.15rem;
+        color: black;
+        margin-top: 0%;
+        font-style: italic; */
+        text-align: center;
+    }
+
+    .picture {
+        display: block;
+        width: 100%;
+        height: 20rem;
+    }
+    
+    .benefit-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .benefits {
+        width: 100%;
+        height: 50rem;
+        display: block;
+    }
+    
+    .benefit-action {
+        width: 70%;
+        margin-bottom: 0%;
+        margin-left: 15%;
+        margin-top: 2.5rem;
+    }
+    
+    .benefits h3 {
+        line-height: normal;
+    }
+    
+    .benefits p {
+        color: dimgrey;
+    }
+
+    #our-team {
+        display: block; /* Ensure it stacks elements */
+        width: 100%;
+        height: 87.5rem;
+    }
+
+    #our_team_title {
+        display: block;
+        text-align: center;
+    }
+
+    .frame {
+        padding-top: 1rem;
+        width: 52%;
+        margin-left: 24%;
+    }
+
+    .team-img {
+        width: 100%;
+        height: 16rem;
+    }
+
+    #itai {
+        margin-left: 24%;
+    }
+    
+    #bio h3 {
+        margin-bottom: 0.2rem;
+        margin-top: 1rem;
+    }
+
+    #bio p {
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    #our-team img {
+        height: 15rem;
+    }
+
+    #team-member {
+        display: block; /* Stack vertically */
+        width: 100%; /* Take full width on smaller screens */
+        margin-bottom: 2rem; /* Add space between team members */
+    }
+
+    #bio {
+        width: 100%; /* Make bio takes full width */
+        margin: 0; /* Remove any left margins */
+    }
+
+    footer {
+        display: block;
+    text-align: center;
+    }
+    
+    /* footer h4 {
+        color: white;
+        margin-top: 0%;
+    } */
+    
+    #name-address {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    
+    /* #legal-name {
+        font-weight: 500;
+        line-height: 1.5;
+    } */
+    
+    address {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+}
 
