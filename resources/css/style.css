@@ -361,7 +361,7 @@ address {
     .container {
         display: block; /* Ensure the container doesn’t force inline layout */
         width: 100%;
-        height: 79rem;
+        height: 85rem;
     }
 
     .tagline h1 {
@@ -404,11 +404,6 @@ address {
     }
     
     h4 {
-        /* font-weight: 400;
-        font-size: 1.15rem;
-        color: black;
-        margin-top: 0%;
-        font-style: italic; */
         text-align: center;
     }
 
@@ -448,7 +443,7 @@ address {
     #our-team {
         display: block; /* Ensure it stacks elements */
         width: 100%;
-        height: 87.5rem;
+        height: 91rem;
     }
 
     #our_team_title {
@@ -458,17 +453,19 @@ address {
 
     .frame {
         padding-top: 1rem;
-        width: 52%;
-        margin-left: 24%;
+        width: 62%;
+        margin-left: 19%;
+        border: red solid;
     }
 
     .team-img {
-        width: 100%;
+        width: 14rem;
         height: 16rem;
+        margin: auto;
     }
 
     #itai {
-        margin-left: 24%;
+        margin-left: 19%;
     }
     
     #bio h3 {
