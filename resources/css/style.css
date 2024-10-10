@@ -443,7 +443,7 @@ address {
     #our-team {
         display: block; /* Ensure it stacks elements */
         width: 100%;
-        height: 91rem;
+        height: 93rem;
     }
 
     #our_team_title {
@@ -455,7 +455,6 @@ address {
         padding-top: 1rem;
         width: 62%;
         margin-left: 19%;
-        border: red solid;
     }
 
     .team-img {
@@ -495,13 +494,8 @@ address {
 
     footer {
         display: block;
-    text-align: center;
+        text-align: center;
     }
-    
-    /* footer h4 {
-        color: white;
-        margin-top: 0%;
-    } */
     
     #name-address {
         width: 100%;
@@ -509,14 +503,13 @@ address {
         margin-top: 0%;
     }
     
-    /* #legal-name {
-        font-weight: 500;
-        line-height: 1.5;
-    } */
-    
     address {
         padding-top: 2rem;
         text-align: center;
+    }
+
+    a {
+        color: white;
     }
 
 }
